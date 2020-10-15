@@ -65,10 +65,7 @@
   color: $dark-blue-text;
   border: 2px solid $light-pink;
   font-size: 2rem;
-
-  &::after {
-    background: $light-pink;
-  }
+  background: $light-pink;
 
   &:hover {
     color: $secondary-color;
