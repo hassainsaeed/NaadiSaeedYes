@@ -1,0 +1,19 @@
+{
+  "name": "naadisaeedyes",
+  "version": "0.0.1",
+  "description": "Wedding wesbite for Naadi and Hassain",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassainsaeed/NaadiSaeedYes.git"
+  },
+  "author": "hassainsaeed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hassainsaeed/NaadiSaeedYes/issues"
+  },
+  "homepage": "https://github.com/hassainsaeed/NaadiSaeedYes#readme"
+}
