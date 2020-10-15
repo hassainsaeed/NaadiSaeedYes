@@ -19,8 +19,7 @@ export const heroData = {
 export const aboutData = {
   title: "What's Happening?",
   img: 'standing-profile.jpg',
-  paragraphOne:
-    'Alhamdulilah, we are elated to announce that Hussain and Naadirah are tying the knot this year!',
+  paragraphOne: 'Alhamdulilah, we are elated to announce that we are tying the knot this year!',
   paragraphTwo:
     'Due to these unprecedented times, the dates and location for the Nikkah and Walima are still TBD but we hope to share them as soon as we can Inshallah',
   paragraphThree:

@@ -29,16 +29,19 @@
     @include respond(phone) {
       padding-bottom: 5rem;
     }
-
     &__image {
       display: flex;
-      height: 90%;
       align-items: center;
       justify-content: center;
       padding-bottom: 1.6rem;
+      margin-bottom: 40px;
 
-      @include respond(tab-land) {
-        height: 90%;
+      @include respond(phone) {
+        height: 400px;
+      }
+
+      @include respond(phone-xs) {
+        height: 200px;
       }
     }
   }
@@ -57,11 +60,11 @@
       text-align: center;
     }
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       line-height: 1.5;
     }
     @include respond(phone-xs) {
-      font-size: 2.8rem;
+      font-size: 1.7rem;
     }
   }
 
