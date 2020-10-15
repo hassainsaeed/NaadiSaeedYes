@@ -1,94 +1,36 @@
-import { nanoid } from 'nanoid';
-
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: '#NaadiSaeedYes', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description:
+    "Wedding website to share details and media from Naadirah and Hussain's upcoming wedding", // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: "Hi, we're ",
+  name: 'Naadirah & Hussain',
+  subtitle: "And we're getting married!",
+  cta: 'Learn More',
+  img: 'sitting.jpg',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  title: "What's Happening?",
+  img: 'standing-profile.jpg',
+  paragraphOne:
+    'Alhamdulilah, we are elated to announce that Hussain and Naadirah are tying the knot this year!',
+  paragraphTwo:
+    'Due to these unprecedented times, the dates and location for the Nikkah and Walima are still TBD but we hope to share them as soon as we can Inshallah',
+  paragraphThree:
+    'This website is still under construction, but coming soon this will be the place to be for information, timings, pictures, and a Livestream for those who cannot attend physically but would like to join us in spirit.',
 };
-
-// PROJECTS DATA
-export const projectsData = [
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-];
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
-};
-
-// FOOTER DATA
-export const footerData = {
-  networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: '',
-    },
-  ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  title: 'Contact',
+  cta: 'Have any questions? Feel free to call or shoot a text message at the number below',
+  btn: 'Lets Talk',
+  phone: '403-473-0115',
 };
