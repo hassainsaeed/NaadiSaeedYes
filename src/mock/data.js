@@ -1,3 +1,5 @@
+import { nanoid } from 'nanoid';
+
 // HEAD DATA
 export const headData = {
   title: '#NaadiSaeedYes', // e.g: 'Name | Developer'
@@ -21,10 +23,54 @@ export const aboutData = {
   img: 'standing-profile.jpg',
   paragraphOne: 'Alhamdulilah, we are elated to announce that we are tying the knot this year!',
   paragraphTwo:
-    'Due to these unprecedented times, the dates and location for the Nikkah and Walima are still TBD but we hope to share them as soon as we can Inshallah',
+    "Our Nikkah will take place on November 21st, 2020, Insha'Allah. The Walima will happen at a later date still TBD",
   paragraphThree:
-    'This website is still under construction, but coming soon this will be the place to be for information, timings, pictures, and a Livestream for those who cannot attend physically but would like to join us in spirit.',
+    'As much as we would love to have all our friends join us, due to government regulations the wedding will be for immediate family only. However we hope that through this website you can join us in spirit, and watch our special occaison through Livestream and photos.',
 };
+
+// EVENTS DATA
+export const eventsData = [
+  {
+    id: nanoid(),
+    img: 'nikkah.jpg',
+    title: 'Nikkah Livestream',
+    info: 'Watch our Nikkah ceremony, live from Masjid Anatolia and our homes in Mississauga',
+    info2:
+      "The Nikkah ceremony live stream will start at 10:30AM EST on November 21st, 2020. And don't worry - a recorded video will be available if you miss it!",
+    url: '/livestream',
+    cta: 'See Live',
+  },
+  {
+    id: nanoid(),
+    img: 'baat-pakki.jpg',
+    title: 'Baat Pakki Photogallery',
+    info:
+      'Its a done deal - here is a photo gallery of pictures taken from our beautiful Baat Pakki ceremony to prove it',
+    info2: 'Photographs shot and edited by Mohammad Yunus',
+    url: '/baatpakki',
+    cta: 'See Photos',
+  },
+  {
+    id: nanoid(),
+    img: 'engagement.jpg',
+    title: 'Engagement Photogallery',
+    info:
+      'Naadi did infact say yes! Here are some photographs taken from our engagement proposal at St. Lawrence Park, Mississauga',
+    info2: 'Photographs shot and edited by Mohammad Yunus',
+    url: '/engagement',
+    cta: 'See Photos',
+  },
+  {
+    id: nanoid(),
+    img: 'favicon.png',
+    title: 'Virtual Guestbook',
+    info:
+      'If you cannot reach us in person, we would be so grateful if you left a note and photo of your beautiful faces for us to see',
+    info2: 'Click the link to leave your best wishes and/or selfie for the Bride and Groom!',
+    url: '',
+    cta: 'Leave a Note',
+  },
+];
 
 // CONTACT DATA
 export const contactData = {
