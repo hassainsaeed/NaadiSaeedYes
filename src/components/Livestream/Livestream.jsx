@@ -29,8 +29,8 @@ function LiveStream() {
           <iframe
             title="livestream"
             src={`https://player.twitch.tv/?channel=naadisaeedyes&parent=${process.env.GATSBY_PARENT_URL}&autoplay=true`}
-            height="720"
-            width="1280"
+            height={isDesktop ? '720' : '100%'}
+            width={isDesktop ? '1280' : '100%'}
             frameBorder="0"
             scrolling="no"
             allowFullScreen="true"
