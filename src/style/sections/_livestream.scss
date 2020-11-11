@@ -1,0 +1,73 @@
+#livestream {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 0px;
+    background: $light-pink;
+    font-weight: 400;
+    color: $secondary-color;
+    padding: 0rem 5.6rem;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  
+    // If you want to set a background image on the hero section, uncomment these with yout custom image
+  
+    /* background: url("/src/assets/[your-image].png");
+    background-position: center;
+    background-size: cover; */
+  
+    @include respond(phone) {
+      padding: 0rem $default-font-size;
+    }
+  
+    .livestream-wrapper {
+      @include respond(phone) {
+        padding-bottom: 5rem;
+      }
+      &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1.6rem;
+        margin-bottom: 40px;
+  
+        @include respond(phone) {
+          height: 400px;
+        }
+  
+        @include respond(phone-xs) {
+          height: 200px;
+        }
+      }
+    }
+  
+    .livestream-title {
+      font-size: 7rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+      text-align: left;
+  
+      @include respond(tab-land) {
+        font-size: 6rem;
+      }
+      @include respond(tab-port) {
+        font-size: 4.6rem;
+        text-align: center;
+      }
+      @include respond(phone) {
+        font-size: 2.5rem;
+        line-height: 1.5;
+      }
+      @include respond(phone-xs) {
+        font-size: 1.7rem;
+      }
+    }
+  
+
+  }
+  
