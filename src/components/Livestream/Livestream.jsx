@@ -28,7 +28,7 @@ function LiveStream() {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <iframe
             title="livestream"
-            src="https://player.twitch.tv/?channel=naadisaeedyes&parent=localhost&autoplay=true"
+            src={`https://player.twitch.tv/?channel=naadisaeedyes&parent=${process.env.GATSBY_PARENT_URL}&autoplay=true`}
             height="720"
             width="1280"
             frameBorder="0"
