@@ -8,6 +8,13 @@ export const headData = {
     "Wedding website to share details and media from Naadirah and Hussain's upcoming wedding", // e.g: Welcome to my website
 };
 
+// LIVESTREAM DATA
+export const livestreamData = {
+  title: 'Livestream',
+  lang: 'en',
+  description: "A livestream of the events from Naadi and Hussain's Nikkah ceremony, and more!",
+};
+
 // HERO DATA
 export const heroData = {
   title: "Hi, we're ",

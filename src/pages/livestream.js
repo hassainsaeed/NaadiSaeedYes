@@ -1,20 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+import Livestream from '../components/Livestream/Livestream';
+import { livestreamData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 export default () => {
+  const { title, lang, description } = livestreamData;
+
   return (
     <>
-      <p>Hello World</p>
-      <iframe
-        title="livestream"
-        src="https://player.twitch.tv/?channel=naadisaeedyes&parent=localhost&autoplay=true"
-        height="720"
-        width="1280"
-        frameBorder="0"
-        scrolling="no"
-        allowFullScreen="true"
-      />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
+      </Helmet>
+      <Livestream />
     </>
   );
 };
