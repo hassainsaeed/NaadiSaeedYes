@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import HeroImg from '../Image/HeroImg';
 import PortfolioContext from '../../context/context';
 
-const Header = () => {
+const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, cta, img } = hero;
 
@@ -52,4 +52,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;
