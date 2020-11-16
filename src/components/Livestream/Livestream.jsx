@@ -3,11 +3,14 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 
 import { livestreamData } from '../../mock/data';
+import useScript from '../../hooks/useScript';
 
 function LiveStream() {
   const { title } = livestreamData;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  useScript('https://embed.twitch.tv/embed/v1.js');
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -19,6 +22,31 @@ function LiveStream() {
     }
   }, []);
 
+  useEffect(() => {
+    function twitchScriptLoaded() {
+      new window.Twitch.Embed('twitch-embed', {
+        width: 854,
+        height: 480,
+        channel: 'naadisaeedyes',
+        collection: 'fk2-tojtRxbMNg',
+        autoplay: true,
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com
+        parent: [`${process.env.GATSBY_PARENT_URL}`, `www.${process.env.GATSBY_PARENT_URL}`],
+      });
+    }
+    const script = document.createElement('script');
+    const url = 'https://embed.twitch.tv/embed/v1.js';
+    script.src = url;
+    script.async = true;
+    script.onload = () => twitchScriptLoaded();
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="livestream" className="jumbotron">
       <Container>
@@ -26,15 +54,7 @@ function LiveStream() {
           <h1 className="livestrean-title">{title}</h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <iframe
-            title="livestream"
-            src={`https://player.twitch.tv/?channel=naadisaeedyes&parent=${process.env.GATSBY_PARENT_URL}&parent=www.${process.env.GATSBY_PARENT_URL}&autoplay=true`}
-            height={isDesktop ? '720' : '100%'}
-            width={isDesktop ? '1280' : '100%'}
-            frameBorder="0"
-            scrolling="no"
-            allowFullScreen="true"
-          />
+          <div id="twitch-embed" />
         </Fade>
       </Container>
     </section>

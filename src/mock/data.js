@@ -43,7 +43,7 @@ export const eventsData = [
     title: 'Nikkah Livestream',
     info: 'Watch our Nikkah ceremony, live from Masjid Anatolia and our homes in Mississauga',
     info2:
-      "The Nikkah ceremony live stream will start at 10:30AM EST on November 21st, 2020. And don't worry - a recorded video will be available if you miss it!",
+      "The Nikkah ceremony live stream will start at 11:15AM EST on November 21st, 2020. And don't worry - a recorded video will be available if you miss it!",
     url: '/livestream',
     cta: 'See Live',
   },
@@ -54,7 +54,7 @@ export const eventsData = [
     info:
       'Its a done deal - here is a photo gallery of pictures taken from our beautiful Baat Pakki ceremony to prove it',
     info2: 'Photographs shot and edited by Mohammad Yunus',
-    url: '/baatpakki',
+    url: 'https://muyuphotography.smugmug.com/Naadirah-Hussain/',
     cta: 'See Photos',
   },
   {
@@ -64,7 +64,17 @@ export const eventsData = [
     info:
       'Naadi did infact say yes! Here are some photographs taken from our engagement proposal at St. Lawrence Park, Mississauga',
     info2: 'Photographs shot and edited by Mohammad Yunus',
-    url: '/engagement',
+    url: 'https://muyuphotography.smugmug.com/Naadirah-and-Hussain-Engagement',
+    cta: 'See Photos',
+  },
+  {
+    id: nanoid(),
+    img: 'dholki.JPG',
+    title: "Hussain's Dholki Photogallery and Videos",
+    info: 'Kicking off wedding festivities with some singing, dancing, and Dhol',
+    info2: 'Photographs shot by Hassan and Sidra Saeed',
+    url:
+      'https://photos.google.com/share/AF1QipM_fjgWn5P478BQFcrasCfYXGjpCPwGNDTgx9Yy75G54_35DiFXbsmXyTjJnqAk9A?key=VkhETXBlNjg0YmpxTlhlaERPdU1La0JHdDRfUjln',
     cta: 'See Photos',
   },
   {
