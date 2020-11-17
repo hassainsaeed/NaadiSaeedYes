@@ -13,6 +13,20 @@ export const livestreamData = {
   title: 'Livestream',
   lang: 'en',
   description: "A livestream of the events from Naadi and Hussain's Nikkah ceremony, and more!",
+  paragraphOne:
+    "We are streaming our Nikkah Ceremony live at 11:15am EST. It's a way to include all of our loved ones on our special day, even if they cannot physically join us.",
+};
+
+// GUESTBOOK DATA
+export const guestbookData = {
+  title: 'Guestbook',
+  lang: 'en',
+  description:
+    'A page for family and friends to leave a message, advice, and/or photos for the bride and groom',
+  paragraphOne:
+    'Share your thoughts and wishes (and your beautiful Selfies!) with the Newly Weds. Feel free to leave any message, marriage advice, memes, fun date suggestions, or just a picture of whatever outfit you wore on our wedding day',
+  paragraphTwo: 'Only the Bride and Groom will see your message and/or photo',
+  paragraphThree: 'THIS PAGE IS STILL UNDER CONSTRUCTION',
 };
 
 // HERO DATA
@@ -79,12 +93,12 @@ export const eventsData = [
   },
   {
     id: nanoid(),
-    img: 'favicon.png',
+    img: 'guestbook-min.JPG',
     title: 'Virtual Guestbook',
     info:
       'If you cannot reach us in person, we would be so grateful if you left a note and photo of your beautiful faces for us to see',
     info2: 'Click the link to leave your best wishes and/or selfie for the Bride and Groom!',
-    url: '',
+    url: '/guestbook',
     cta: 'Leave a Note',
   },
 ];
