@@ -6,7 +6,7 @@ import { livestreamData } from '../../mock/data';
 import useScript from '../../hooks/useScript';
 
 function LiveStream() {
-  const { title } = livestreamData;
+  const { title, paragraphOne } = livestreamData;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -48,10 +48,18 @@ function LiveStream() {
   }, []);
 
   return (
-    <section id="livestream" className="jumbotron">
+    <section id="livestream">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="livestrean-title">{title}</h1>
+          <div className="livestrean-wrapper__info">
+            <p className="livestrean-wrapper__info-text">{paragraphOne}</p>
+            <p className="livestrean-wrapper__info-text">
+              If the event is live now you can watch below, or if you missed it go to our{' '}
+              <a href="https://www.twitch.tv/naadisaeedyes"> Twitch Channel</a> for the recorded
+              videos.
+            </p>
+          </div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <div id="twitch-embed" />
