@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import Title from '../Title/Title';
 
 import { livestreamData } from '../../mock/data';
 import useScript from '../../hooks/useScript';
@@ -51,7 +52,7 @@ function LiveStream() {
     <section id="livestream">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="livestrean-title">{title}</h1>
+          <Title title={title} />
           <div className="livestrean-wrapper__info">
             <p className="livestrean-wrapper__info-text">{paragraphOne}</p>
             <p className="livestrean-wrapper__info-text">
