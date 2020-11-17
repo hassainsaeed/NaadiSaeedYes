@@ -81,7 +81,7 @@ export const eventsData = [
   },
   {
     id: nanoid(),
-    img: 'guestbook.JPG',
+    img: 'guestbook-min.JPG',
     title: 'Virtual Guestbook',
     info:
       'If you cannot reach us in person, we would be so grateful if you left a note and photo of your beautiful faces for us to see',
