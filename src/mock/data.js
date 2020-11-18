@@ -26,7 +26,7 @@ export const guestbookData = {
   paragraphOne:
     'Share your thoughts and wishes (and your beautiful Selfies!) with the Newly Weds. Feel free to leave any message, marriage advice, memes, fun date suggestions, or just a picture of whatever outfit you wore on our wedding day',
   paragraphTwo: 'Only the Bride and Groom will see your message and/or photo',
-  paragraphThree: 'THIS PAGE IS STILL UNDER CONSTRUCTION',
+  paragraphThree: '',
 };
 
 // HERO DATA

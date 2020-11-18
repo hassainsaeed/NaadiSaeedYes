@@ -14,8 +14,10 @@
     "lint": "eslint --fix"
   },
   "dependencies": {
+    "antd": "^4.8.4",
     "baseui": "^9.104.0",
     "bootstrap": "^4.5.0",
+    "emailjs-com": "^2.6.4",
     "gatsby": "^2.23.7",
     "gatsby-image": "^2.4.7",
     "gatsby-plugin-manifest": "^2.4.12",
