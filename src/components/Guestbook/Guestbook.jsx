@@ -90,7 +90,6 @@ function Guestbook() {
             ]}
             style={{ width: '50%', margin: '0 auto' }}
           >
-            >
             <Input name="user_email" />
           </FormItem>
           <FormItem
