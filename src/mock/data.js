@@ -22,11 +22,11 @@ export const guestbookData = {
   title: 'Guestbook',
   lang: 'en',
   description:
-    'A page for family and friends to leave a message, advice, and/or photos for the bride and groom',
-  paragraphOne:
-    'Share your thoughts and wishes (and your beautiful Selfies!) with the Newly Weds. Feel free to leave any message, marriage advice, memes, fun date suggestions, or just a picture of whatever outfit you wore on our wedding day',
-  paragraphTwo: 'Only the Bride and Groom will see your message and/or photo',
-  paragraphThree: 'THIS PAGE IS STILL UNDER CONSTRUCTION',
+    'A page for family and friends to leave a message for the bride and groom. You can leave your well wishes, give your best marriage advice, or simply just say hello!',
+  paragraphOne: 'Share your thoughts and wishes with the Newly Weds!',
+  paragraphTwo:
+    "Feel free to write any message you'd like, best wishes, marriage advice, jokes, fun date suggestions, or even a link to a picture of whatever outfit you wore on our wedding day",
+  paragraphThree: 'Only the Bride and Groom will see your message',
 };
 
 // HERO DATA
