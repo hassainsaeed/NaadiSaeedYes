@@ -16,19 +16,14 @@ import { guestbookData } from '../../mock/data';
 const FormItem = Form.Item;
 const { TextArea } = Input;
 
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-};
-
 function Guestbook() {
   const { title, paragraphOne, paragraphTwo, paragraphThree } = guestbookData;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  const sendEmail = (templateParams) => {
+  const sendEmail = (e) => {
     emailjs
-      .sendForm('service_ntnstwa', 'template_siaattu', templateParams, 'user_Mpbs9elFJYUKcmve5O3Tc')
+      .sendForm('service_ntnstwa', 'template_siaattu', e.target, 'user_Mpbs9elFJYUKcmve5O3Tc')
       .then(
         (result) => {
           console.log(result.text);
@@ -37,10 +32,6 @@ function Guestbook() {
           console.log(error.text);
         }
       );
-  };
-
-  const onSendEmailFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
   };
 
   useEffect(() => {
@@ -67,46 +58,49 @@ function Guestbook() {
           </Fade>
         </Container>
       </section>
-      <Fade bottom duration={1000} delay={500} distance="30px">
-        <Form {...layout} name="contact" onFinish={sendEmail} onFinishFailed={onSendEmailFailed}>
-          <FormItem
-            label="Name"
-            name="user_name"
-            rules={[{ whitespace: true }]}
-            style={{ width: '50%', margin: '0 auto' }}
-          >
-            <Input name="user_name" />
-          </FormItem>
-          <FormItem
-            label="E-mail"
-            name="user_email"
-            rules={[
-              {
-                required: true,
-                message: 'Please input your e-mail address!',
-                whitespace: true,
-                type: 'email',
-              },
-            ]}
-            style={{ width: '50%', margin: '0 auto' }}
-          >
-            <Input name="user_email" />
-          </FormItem>
-          <FormItem
-            label="Message"
-            name="message"
-            rules={[{ required: true, message: 'Please input your message!', whitespace: true }]}
-            style={{ width: '50%', margin: '0 auto' }}
-          >
-            <TextArea name="message" placeholder="" autosize={{ minRows: 4, maxRows: 10 }} />
-          </FormItem>
-          <FormItem style={{ marginTop: '30px' }}>
-            <Button type="primary" htmlType="submit">
-              Submit
-            </Button>
-          </FormItem>
-        </Form>
-      </Fade>
+      <section id="form">
+        <br />
+        <br />
+        <Fade bottom duration={1000} delay={500} distance="30px">
+          <form name="contact" onSubmit={sendEmail}>
+            <FormItem
+              label="Name"
+              name="from_name"
+              rules={[{ whitespace: true, required: true }]}
+              style={{ width: '50%', margin: '0 auto' }}
+            >
+              <Input name="from_name" />
+            </FormItem>
+            <FormItem
+              label="E-mail"
+              name="user_email"
+              rules={[
+                {
+                  message: 'Please input your e-mail address!',
+                  whitespace: true,
+                  type: 'email',
+                },
+              ]}
+              style={{ width: '50%', margin: '0 auto' }}
+            >
+              <Input name="user_email" />
+            </FormItem>
+            <FormItem
+              label="Message"
+              name="message"
+              rules={[{ required: true, message: 'Please input your message!', whitespace: true }]}
+              style={{ width: '50%', margin: '0 auto' }}
+            >
+              <TextArea name="message" placeholder="" autosize={{ minRows: 4, maxRows: 10 }} />
+            </FormItem>
+            <FormItem style={{ marginTop: '30px' }}>
+              <Button type="primary" htmlType="submit">
+                Submit
+              </Button>
+            </FormItem>
+          </form>
+        </Fade>
+      </section>
     </>
   );
 }
