@@ -20,16 +20,25 @@ function Guestbook() {
   const { title, paragraphOne, paragraphTwo, paragraphThree } = guestbookData;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const sendEmail = (e) => {
+    e.preventDefault();
+
+    setDisabled({
+      disabled: true,
+    });
+
     emailjs
       .sendForm('service_ntnstwa', 'template_siaattu', e.target, 'user_Mpbs9elFJYUKcmve5O3Tc')
       .then(
         (result) => {
           console.log(result.text);
+          alert('Your message has been sent sucessfully. Thanks!');
         },
         (error) => {
           console.log(error.text);
+          alert('Something went wrong, and your message failed to send. Sorry!');
         }
       );
   };
@@ -94,7 +103,7 @@ function Guestbook() {
               <TextArea name="message" placeholder="" autosize={{ minRows: 4, maxRows: 10 }} />
             </FormItem>
             <FormItem style={{ marginTop: '30px' }}>
-              <Button type="primary" htmlType="submit">
+              <Button type="primary" htmlType="submit" disabled={disabled}>
                 Submit
               </Button>
             </FormItem>
