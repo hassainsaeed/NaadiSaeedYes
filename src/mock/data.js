@@ -73,16 +73,6 @@ export const eventsData = [
   },
   {
     id: nanoid(),
-    img: 'engagement.jpg',
-    title: 'Engagement Photogallery',
-    info:
-      'Naadi did infact say yes! Here are some photographs taken from our engagement proposal at St. Lawrence Park, Mississauga',
-    info2: 'Photographs shot and edited by Mohammad Yunus',
-    url: 'https://muyuphotography.smugmug.com/Naadirah-and-Hussain-Engagement',
-    cta: 'See Photos',
-  },
-  {
-    id: nanoid(),
     img: 'dholki.JPG',
     title: "Hussain's Dholki Photogallery and Videos",
     info: 'Kicking off wedding festivities with some singing, dancing, and Dhol',
