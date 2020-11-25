@@ -73,16 +73,6 @@ export const eventsData = [
   },
   {
     id: nanoid(),
-    img: 'dholki.JPG',
-    title: "Hussain's Dholki Photogallery and Videos",
-    info: 'Kicking off wedding festivities with some singing, dancing, and Dhol',
-    info2: 'Photographs shot by Hassan and Sidra Saeed',
-    url:
-      'https://photos.google.com/share/AF1QipM_fjgWn5P478BQFcrasCfYXGjpCPwGNDTgx9Yy75G54_35DiFXbsmXyTjJnqAk9A?key=VkhETXBlNjg0YmpxTlhlaERPdU1La0JHdDRfUjln',
-    cta: 'See Photos',
-  },
-  {
-    id: nanoid(),
     img: 'guestbook-min.JPG',
     title: 'Virtual Guestbook',
     info:
